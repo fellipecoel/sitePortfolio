@@ -1,0 +1,180 @@
+
+
+/*
+margin corresponde ao espaçamento externa da caixa  em que o elemento está até os
+cantos da página
+
+padding corresponde ao espaçamento inteiro do elemento  em relação à sua própria caixa 
+
+background corresponde ao fundo, no qual é possível colocar uma cor sólida única
+ou em gradiente
+
+box-sizing: content-box não é uma boa prática, pois
+ao aumentarmos uma imagem, por exemplo, ou qualquer outro 
+elemento, o que ocorre é que a CAIXA DE CONTEÚDO (em que
+o elemento está) aumenta e não ele em si, causando possíveis
+distorções. O ideal é utilizar box-sizing: border-box
+
+Utilizar o site: https://cssgradient.io/
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+ 
+   
+
+ 
+ 
+ #menu {
+    display: flex;
+    list-style: none;
+    padding: 25px;
+    justify-content: center;
+    margin-bottom: 25px;
+
+ }
+ #menu a {
+    
+  font-family:'Noto Serif Vithkuqi', serif; 
+  font-size: 17px; 
+  color: rgba(30, 30, 31, 0.676);
+  text-decoration:none;
+  flex-direction: row;
+  margin: 30px;
+  text-transform: uppercase;
+ }
+ 
+header {
+  background: linear-gradient(90deg, rgba(0,212,255,1) 18%, rgba(9,9,121,1) 86%, rgba(2,0,36,0.9724264705882353) 93%);
+}
+
+.apresentacao {
+  padding: 48px 0px;
+  display: flex;
+  
+}
+
+
+h1, span {
+  font-size: 26px;
+  color: rgb(234, 234, 255);
+  font-family: 'Noto Serif Vithkuqi', serif;
+  line-height: 180%;
+}
+
+
+.right {
+  flex: 5;
+  text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.left {
+  flex: 9;
+  text-align: center;
+}
+
+.btn {
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Noto Serif Vithkuqi', serif; ;
+  padding: 6px;
+  border-radius: 5px;
+ font-size: 14px;
+
+}
+
+
+
+.btnContact {
+  background: rgb(143, 31, 31);
+  color: rgb(19, 26, 34);
+  margin-top: 30px;
+}
+
+.btnContact:hover {
+  background: rgb(89, 118, 160);
+  color: beige;
+}
+
+.containerServicos {
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.itemServico1, .itemServico3, .itemServico6, .itemServico8 {
+  border: 1px solid rgb(212, 0, 255);
+  border-radius: 5px;
+  margin: 15px;
+  padding: 40px 10px;
+  text-align: center;
+  width: 20%;
+}
+
+.itemServico2, .itemServico4, .itemServico5, .itemServico7 {
+  border: 1px solid rgb(119, 0, 255);
+  border-radius: 5px;
+  margin: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  width: 20%;
+}
+
+.containerServicos h2 {
+  font-family:'Noto Serif Vithkuqi', serif; 
+  font-size: 15px;
+  color: rgb(253, 253, 255);
+}
+
+.containerServicos img {
+  width: 60px;
+}
+
+.itemServico1:hover, .itemServico3:hover, .itemServico6:hover, .itemServico8:hover {
+  border: 1px solid rgb(25, 76, 246);
+  background: rgba(20, 20, 127, 0.509);
+  cursor: pointer;
+}
+
+.itemServico2:hover, .itemServico4:hover,  .itemServico5:hover, .itemServico7:hover {
+  border: 1px solid rgb(25, 76, 246);
+  background: rgba(20, 20, 127, 0.468);
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h3 {
+  color: rgb(255, 254, 254);
+  background: rgb(0, 0, 0);
+  text-align: center;
+  font-family: 'Noto Serif Vithkuqi', serif;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+h2 {
+  color: rgb(250, 246, 255);
+  background: rgb(0, 0, 0);
+  text-align: center;
+  font-family: 'Noto Serif Vithkuqi', serif;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+
+
