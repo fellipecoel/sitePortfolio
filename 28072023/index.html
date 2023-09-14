@@ -29,24 +29,21 @@ armazena os metadados -->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap");
     </style>
-    <!-- Cabeçalho da página -->
-    <header>
-      <!-- Tag nav: Cria um seção de menu (navigation) -->
-      <nav>
-        <!-- Tag ul: cria uma lista desordenada, enquanto a tag
-            ol cria uma lista ordenada -->
-        <ul id="menu">
-          <!-- Tag li: determina cada item -->
 
-          <!-- Tag a: possibilita que o texto seja clicável -->
-          <!-- href: determina o redirecionamento da página -->
+    <header>
+      <!--Início do menu-->
+
+      <nav>
+        <ul id="menu">
           <li><a href="#"> Início </a></li>
-          <li><a href="sobremim.html"> Sobre mim </a></li>
+          <li><a href="#sobremim"> Sobre mim </a></li>
           <li><a href="#servicos"> Soluções em TI </a></li>
           <li><a href="contato.html"> Contato </a></li>
         </ul>
       </nav>
+      <!--Fim do menu-->
 
+      <!--Início da seção de apresentação-->
       <div class="apresentacao">
         <div class="left">
           <img
@@ -64,70 +61,150 @@ armazena os metadados -->
           </div>
         </div>
       </div>
+
+      <!--Fim da seção de apresentação-->
     </header>
 
+    <section id="sobremim">
+      <h3>sobremim</h3>
+      <div class="containerSobreMim">
+        <div class="left">
+
+          <h2>Fellipe Coelho</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing el itaque iusto
+            delectus voluptatibus amet voluptatus fa incidunt necessitatibus
+            ratione tenetur!
+          </p>
+        </div>
+
+        <div class="right">
+          <!-- <iframe width="500" height="300" src="https://www.youtube.com/embed/NabGc3aYxno?si=djMQykFwHxpU9kV_"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen></iframe> -->
+
+          <!-- <video controls autoplay width="600" height="400">
+        <source src="img/video.mp4" >
+       </video> -->
+
+
+
+       
+       <div class="socialMedia">
+        <div>
+            <a href="https://api.whatsapp.com/send?phone=5511984306057" target="_blank">
+                <img src="img/redesSociais/whatsapp2.png">
+        </div>
+
+        <div>
+            <p>(11) 984306057</p>  
+          </a>
+        </div>
+      
+    </div>
+
+
+    <div class="socialMedia">
+      <div>
+          <a href="https://github.com/fellipecoel" target="_blank">
+              <img src="img/redesSociais/github2.png">
+      </div>
+
+      <div>
+          <p>github.com/fellipecoel</p>  
+      </a>
+      </div>
+    
+  </div>
+
+
+
+  <div class="socialMedia">
+    <div>
+        <a href="https://www.linkedin.com/in/fellipe-coelho-687709248/" target="_blank">
+            <img src="img/redesSociais/linkedin2.png">
+    </div>
+
+    <div>
+        <p>linkedin.com/in/fellipecoelho</p>
+
+    </div>
+    </a>
+</div>
+        
+
+<div class="socialMedia">
+  <div>
+      <a href="mailto:fellipe.2401@gmail.com">
+          <img src="img/redesSociais/gmail.png">
+  </div>
+
+  <div>
+      <p>fellipe.2401@gmail.com</p>
+  </div>
+  </a>
+</div>
+
+          </a>
+
+      
+    </div>
+    </section>
+
     <section id="servicos">
+      <!--Início da seção de serviços em redes de computadores -->
       <h2>Assitê em redes de computadores</h2>
       <div class="containerServicos">
-
         <div class="itemServico1">
-
-            <img src="img/montagemPC/96px.png">
-            <h2>Montagem e manutenção de computadores</h2>
-
+          <img src="img/montagemPC/96px.png" />
+          <h2>Montagem e manutenção de computadores</h2>
         </div>
 
         <div class="itemServico2">
-
-            <img src="img/redes/96px.png">
-            <h2>Implementação e configuração de redes</h2>
-
+          <img src="img/redes/96px.png" />
+          <h2>Implementação e configuração de redes</h2>
         </div>
 
         <div class="itemServico3">
-            <img src="img/configuracaoSO/96px.png">
-            <h2>Instalação e configuração de sistemas operacionais</h2>
-
+          <img src="img/configuracaoSO/96px.png" />
+          <h2>Instalação e configuração de sistemas operacionais</h2>
         </div>
 
         <div class="itemServico4">
-            <img src="img/SegurancaInformacao_64px.png">
-            <h2>Segurança da informação e backup</h2>
+          <img src="img/SegurancaInformacao_64px.png" />
+          <h2>Segurança da informação e backup</h2>
         </div>
+      </div>
 
-    </div>
+      <!--Fim da seção de serviços em redes de computadores -->
 
-    <h3>Desenvolimento e Implementação de aplicativos</h3>
-    <div class="containerServicos">
-          
+      <!--Início da seção de serviços em desenvolvimento -->
+      <h3>Desenvolimento e Implementação de aplicativos</h3>
+      <div class="containerServicos">
         <div class="itemServico5">
-            <img src="img/prototipacao/96px.png">
-            <h2>Prototipação de aplicações</h2>
+          <img src="img/prototipacao/96px.png" />
+          <h2>Prototipação de aplicações</h2>
         </div>
 
         <div class="itemServico6">
-            <img src="img/bancoDeDados/96px.png">
-            <h2>Estruturação e administração de banco de dados</h2>
-
+          <img src="img/bancoDeDados/96px.png" />
+          <h2>Estruturação e administração de banco de dados</h2>
         </div>
 
         <div class="itemServico7">
-            <img src="img/sistemaDesktop/96px.png">
-            <h2>Desenvolvimento de sistemas Desktop</h2>
-
+          <img src="img/sistemaDesktop/96px.png" />
+          <h2>Desenvolvimento de sistemas Desktop</h2>
         </div>
 
         <div class="itemServico8">
-            <img src="img/desenvolverSite/96px.png">
-            <h2>Desenvolvimento e hospedagem de sites</h2>
+          <img src="img/desenvolverSite/96px.png" />
+          <h2>Desenvolvimento e hospedagem de sites</h2>
         </div>
+      </div>
 
-    </div>
-
-
+      <!--Fim da seção de serviços em desenvolvimento-->
     </section>
-
-    
 
     <!-- 
     <h3>  Subtítulo 3 </h3>
@@ -139,7 +216,8 @@ armazena os metadados -->
     <!-- Tag p: Representar o parágrafo -->
     <p>Olá, mundo!</p>
 
-    <!-- Tag footer: seção para identificar o rodapé -->
+    <!--Início do rodapé-->
     <footer></footer>
+    <!--Fim do rodapé-->
   </body>
 </html>
