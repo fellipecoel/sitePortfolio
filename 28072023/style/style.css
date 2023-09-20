@@ -29,14 +29,14 @@ Utilizar o site: https://cssgradient.io/
 
  
  
- #menu {
+ /*#menu {
     display: flex;
     list-style: none;
     padding: 25px;
     justify-content: center;
     margin-bottom: 25px;
+   }*/
 
- }
  #menu a {
     
   font-family:'Noto Serif Vithkuqi', serif; 
@@ -109,6 +109,7 @@ h1, span {
   display: flex;
   justify-content: center;
   padding: 50px;
+  margin-top: -8px;
 }
 
 .itemServico1, .itemServico3, .itemServico6, .itemServico8 {
@@ -118,6 +119,9 @@ h1, span {
   padding: 40px 10px;
   text-align: center;
   width: 20%;
+  cursor: pointer;
+  transition: ease 1.5s;
+  transition: scale(1.1);
 }
 
 .itemServico2, .itemServico4, .itemServico5, .itemServico7 {
@@ -127,6 +131,8 @@ h1, span {
   padding: 40px 30px;
   text-align: center;
   width: 20%;
+  transition: ease 1.7s;
+  transition: scale(1.5);
 }
 
 .containerServicos h2 {
@@ -141,14 +147,16 @@ h1, span {
 
 .itemServico1:hover, .itemServico3:hover, .itemServico6:hover, .itemServico8:hover {
   border: 1px solid rgb(25, 76, 246);
-  background: rgba(20, 20, 127, 0.509);
+  background: rgb(0, 0, 0);
   cursor: pointer;
+  box-shadow: 20px 0px 20px rgb(31, 34, 243);
 }
 
 .itemServico2:hover, .itemServico4:hover,  .itemServico5:hover, .itemServico7:hover {
   border: 1px solid rgb(25, 76, 246);
-  background: rgba(20, 20, 127, 0.468);
+  background: rgb(0, 0, 0);
   cursor: pointer;
+  box-shadow: 20px 0px 20px rgb(31, 34, 243);
 }
 
 html {
@@ -176,5 +184,162 @@ h2 {
   text-transform: uppercase;
 }
 
+
+.containerSobreMim {
+  display: flex;
+  background: black;
+  padding-bottom: 50px;
+  margin-top: -8px;
+}
+
+.containerSobreMim .left {
+  background: rgb(0, 0, 0);
+  margin: 100px; /*.!!.*/
+ margin-left: 100px; /*.!!.*/
+  flex: 7;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: white;
+  text-align: left; /**/
+  line-height: 30px; /**/
+}
+
+.containerSobreMim .right {
+  background: black;
+  flex: 3;
+  text-align: center;
+}
+
+#sobremim h3 {
+  background: black;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.socialMedia {
+  display: flex;
+  
+}
+
+.socialMedia img {
+  width: 30px;
+}
+
+.left h2 {
+  color: rgb(255, 255, 255);
+  padding-bottom: 20px;
+}
+
+.socialMedia p {
+  margin-left: 5px;
+  font-family: "Noto Serif Vithkuqi", serif;
+  font-size: 15px;
+  color: rgb(255, 240, 240);
+}
+
+.socialMedia p:hover{
+  color: blue;/**/
+}
+
+
+.socialMedia a {
+  text-decoration: none;
+}
+
+#contato {
+  background: rgb(0, 0, 0);
+  font-family: "Noto Serif Vithkuqi", serif ;
+  color: beige;
+}
+
+.containerContato h2 {
+  font-size: 22px;
+}
+
+form {
+  font-size: 16px;
+  max-width: 500px;
+  background: rgb(0, 0, 0);
+  padding-left: 50px ;
+  padding-bottom: 10px;
+}
+
+input, textarea {
+  width: 200px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+   margin-bottom: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid;
+  cursor: pointer;
+  border: 1px solid rgb(255, 3, 3);
+}
+
+
+.displayContato {
+  display: flex;
+}
+
+form h2 {
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.mensagem {
+  margin-left: 60px;
+  
+}
+
+textarea {
+  resize: none;
+   width: 350px;
+   height: 125px;
+}
+
+.mensagem input {
+  width: 130px;
+  text-align: center;
+  font-size: 16px;
+  background: blueviolet;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-family: "Noto Serif Vithkuqi", serif ;
+}
+
+.mensagem input:hover {
+  background: blue;
+}
+
+.mapa {
+  margin-left: 90px;
+}
+
+iframe {
+  border-radius: 5px;
+  margin-top: -30px;
+}
+
+.navColor {
+  justify-content: center;
+  background: linear-gradient(90deg, rgba(0,212,255,1) 18%, rgba(9,9,121,1) 86%, rgba(2,0,36,0.9724264705882353) 93%);
+}
+
+.container-fluid {
+  background: linear-gradient(90deg, rgba(0,212,255,1) 18%, rgba(9,9,121,1) 86%, rgba(2,0,36,0.9724264705882353) 93%);
+  margin-top: -8px;
+  margin-bottom: -8px;
+}
+
+.navbar-toggler {
+  border: 1px solid black;
+  border: 1px solid transparent;
+  margin: 7px;
+}
+
+.navbar {
+  --bs-navbar-toggler-icon-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 
 
