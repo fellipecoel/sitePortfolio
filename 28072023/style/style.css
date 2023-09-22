@@ -352,3 +352,17 @@ footer {
 .rodape {
   background: black;
 }
+
+@media screen and (max-whidth: 480px) {
+  .apresentacao {
+    flex-direction: column;
+  }
+
+  .left img {
+    margin-bottom: 14px;
+  }
+
+  .right {
+    text-align: center;
+  }
+}
